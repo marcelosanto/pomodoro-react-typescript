@@ -5,11 +5,14 @@ import { Button } from './button'
 import { Timer } from './timer'
 
 interface Props {
-  defaultPomodoroTime: number
+  pomodoroTime: number
+  shorResTime: number
+  longRestTime: number
+  cycles: number
 }
 
 export function PomodoroTimer(props: Props): JSX.Element {
-  const [mainTime, setMainTime] = useState(props.defaultPomodoroTime)
+  const [mainTime, setMainTime] = useState(props.pomodoroTime)
 
   UseInterval(() => {
     setMainTime(mainTime - 1)
@@ -18,8 +21,27 @@ export function PomodoroTimer(props: Props): JSX.Element {
   return (
     <div className="pomodoro">
       <h2>You are: working</h2>
-      <Button text="Testando"></Button>
       <Timer mainTime={mainTime} />
+      <div className="controls">
+        <Button text="Testando"></Button>
+        <Button text="Testando"></Button>
+        <Button text="Testando"></Button>
+      </div>
+
+      <div className="details">
+        <p>
+          TesTando: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>
+          TesTando: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>
+          TesTando: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>
+          TesTando: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
     </div>
   )
 }
