@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { UseInterval } from '../hooks/use-interval'
 import { Button } from './button'
 import { Timer } from './timer'
+
 interface Props {
   defaultPomodoroTime: number
 }
