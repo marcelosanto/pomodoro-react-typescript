@@ -14,7 +14,10 @@ export function UseInterval<C extends CallableFunction>(
     function tick() {
       if (savedCallback.current) savedCallback.current()
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 915f421567c9b018e03df5eceedd4fa34d6d50ec
     if (delay !== null) {
       const id = setInterval(tick, delay)
       return () => clearInterval(id)
