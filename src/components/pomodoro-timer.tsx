@@ -90,7 +90,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
 
   return (
     <div className="pomodoro">
-      <h2>Você está: {timeCounting ? 'Trabalhando' : 'Descansando'}</h2>
+      <h2>Você está: {working ? 'Trabalhando' : 'Descansando'}</h2>
       <Timer mainTime={mainTime} />
       <div className="controls">
         <Button text="Work" onClick={() => configureWork()}></Button>
