@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: sans-serif;
-  background: #41e1ba;
-  transition: background-color 300ms ease-in-out;
+  background: url('/src/assets/images/pomodor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   line-height: 1.5;
 }
 
@@ -26,11 +30,11 @@ body {
 }
 
 .pomodoro {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
   margin: 50px 20px;
   padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
 
 .pomodoro h2 {
